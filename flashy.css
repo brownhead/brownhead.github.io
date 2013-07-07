@@ -1,198 +1,121 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
 
-/* General */
 body {
     padding: 0px;
     margin: 0px;
 }
 
-.all_consuming {
+/* My logic powering the canvas powering the canvas uses a naive way of
+ * detecting the width of the window that includes the vertical scroll bar.
+ * This can cause a horizontal scroll bar to appear if I didn't add this rule.
+ */
+#canvas_container {
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
 }
 
-.vwrapper {
-    display: table;
-    height: 100%;
-    width: 100%;
-}
-
-.vcentered {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.vwrapper_small {
-    display: table;
-}
-
-.vcentered_small {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-/* Landing Page */
 #landing_page {
     font-family: "Open Sans", sans-serif;
     background-color: #FFFFFF;
     color: #161616;
+    padding: 80px 0px;
 }
 
-#landing_page .container {
-    max-width: 800px;
-    min-width: 400px;
-    margin: 0px auto;
+/* The badge will be positioned via javascript, but in case JavaScript is
+ * disabled this will be the styling that is used.
+ */
+#landing_page #badge_fallback {
+    width: 100%;
 }
 
-#landing_page #background {
-    overflow: hidden;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 0;
-}
-
-#landing_page #content {
-    position: absolute;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
+#landing_page #badge {
+    display: table;
+    margin: auto;
 }
 
 #landing_page #title {
     font-size: 78px;
-    font-weight: 500;
-    text-align: center;
+    font-weight: 400;
     margin: 0px;
 }
 
-#landing_page #title_inner_container {
-    float: right;
-    padding-top: 35px;
-}
-
-#landing_page #subtitle {
-    text-align: center;
-}
-
-#landing_page #links {
-    text-align: center;
-    padding-top: 30px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 24px;
-    clear: both;
-}
-
-#landing_page #links a {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#landing_page #title_container {
-    margin: 0px auto;
-    min-height: 220px;
-}
-
-#landing_page #picture {
+#landing_page #selfie {
     padding: 4px;
     background-color: white;
     border: 1px solid #DDDDDD;
+    display: table-cell;
 }
 
-#landing_page a {
+#landing_page #badge_description {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 30px;
+}
+
+#landing_page #intro {
+    margin: 50px auto 0px auto;
+    background-color: #DCE0DF;
+    padding: 30px;
+    font-size: 24px;
+    width: 600px;
+}
+
+/* Nav stuff */
+#navbar {
+    display: table;
+    width: 100%;
+    background-color: #DCE0DF;
+    border-top: 10px solid #837E78;
+}
+
+#landing_page a.nav_item {
+    display: table-cell;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 0px;
+    color: #000000;
     text-decoration: none;
-    color: #161616;
 }
 
-#landing_page a:hover {
-    text-decoration: underline;
+#landing_page a.nav_item:hover {
+    background-color: #C1D2CC;
 }
 
-/* Resume */
-#resume {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    color: #161616;
+#landing_page .nav_tile {
+    display: inline-block;
+    width: 300px;
 }
 
-#resume a {
-    color: #161616;
+/* Making the image a block is necessary because otherwise there will be an
+ * invisible margin due to the line spacing since images are treated as inline
+ * elements by default.
+ */
+#landing_page .nav_tile > img {
+    display: block;
 }
 
-#resume p {
-    line-height: 1.62;
+#landing_page .nav_tile > .caption {
+    background-color: #837E78;
+    padding: 10px 0px;
+    color: #FFFFFF;
 }
 
-#resume .container {
-    max-width: 700px;
-    min-width: 400px;
+#landing_page #project_galah {
     margin: 0px auto;
+    width: 600px;
+    font-size: 24px;
 }
 
-#resume #title {
-    font-size: 80px;
-    font-weight: 500;
-    text-align: center;
+#landing_page .images {
+
 }
 
-#resume #inner_title_block {
-    padding-bottom: 20px;
-    border-bottom: 2px solid #CBE86B;
-}
+#landing_page .description {
 
-#resume #subtitle {
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-}
-
-#resume #title_block {
-    padding: 40px 0px 10px 0px;
-}
-
-#resume h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 41px;
-    border-bottom: 2px solid #CBE86B;
-    border-top: 2px solid #CBE86B;
-}
-
-#resume h2 {
-    font-weight: 700;
-    font-size: 30px;
-    border-bottom: 2px solid #CBE86B;
-}
-
-#resume h3 {
-    font-size: 25px;
-    font-weight: 700;
-}
-
-#resume .topic_experience {
-    font-weight: 400;
-    text-transform: uppercase;
-    font-style: italic;
-}
-
-#resume .topic_experience a {
-    margin: 0px 5px 0px 5px;
-}
-
-#resume .toc a {
-    margin: 0px 5px 0px 5px;
-}
-
-#resume .toc h3 {
-    display: inline;
-    font-size: 16px;
-    color: #8CA341;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-#resume .toc_section {
-    margin: 15px 0px 15px 0px;
 }
