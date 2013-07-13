@@ -2,7 +2,9 @@
 
 body {
     padding: 0px;
-    margin: 0px;
+    margin: 0px auto;
+    font-size: 150%;
+    width: 63%;
 }
 
 /* My logic powering the canvas powering the canvas uses a naive way of
@@ -19,139 +21,20 @@ body {
     z-index: -1;
 }
 
-#landing_page {
+#landing-page {
     font-family: "Open Sans", sans-serif;
     background-color: #FFFFFF;
     color: #161616;
     padding: 4px 0px;
 }
 
-#content_container {
-    width: 65%;
-    margin: 0px auto;
+#landing-page .feature {
+    background-color: #FAFAFA;
+    border: 1px solid #CCC;
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
-#landing_page #badge {
-    display: table;
-    /*margin: 0px auto;*/
-    width: 100%;
-    border-bottom: 4px solid #FFF;
-}
-
-#landing_page #title {
-    font-size: 54px;
-    font-weight: 600;
-    margin: 0px;
-}
-
-#landing_page #selfie {
-    display: table-cell;
-    width: 33%;
-}
-
-#landing_page #badge_description {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    background-color: #D96868;
-    border-left: 4px solid #FFF;
-    color: white;
-}
-
-#landing_page #intro_block {
-    /*margin: 0px auto;*/
-    width: 100%;
-}
-
-#landing_page #intro {
-    background-color: #DCE0DF;
-    padding: 30px;
-    font-size: 24px;
-}
-
-/* Nav stuff */
-#navbar {
-    display: table;
-    width: 100%;
-    border-top: 4px solid #FFF;
-    table-layout: fixed;
-}
-
-#landing_page .nav_item {
-    display: table-cell;
-    text-align: center;
-    font-size: 18px;
-    color: #000000;
-    border-left: 4px solid #FFF;;
-}
-
-#landing_page .nav_item:first-child {
-    border: none;
-}
-
-#landing_page .nav_item > a {
-    text-decoration: none;
-}
-
-#landing_page .nav_item > a:hover > .caption {
-    opacity: 0.8;
-}
-
-#landing_page .nav_tile {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-}
-
-/* Making the image a block is necessary because otherwise there will be an
- * invisible margin due to the line spacing since images are treated as inline
- * elements by default.
- */
-#landing_page .nav_tile > img {
-    display: block;
-}
-
-#landing_page .nav_tile > .caption {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    background-color: #837E78;
-    padding: 10px 0px;
-    color: #FFFFFF;
-    opacity: 0.5;
-}
-
-#landing_page #project_galah {
-    /*margin: 0px auto;*/
-    width: 668px;
-    font-size: 24px;
-}
-
-#landing_page .responsive_image {
-    /* This is meant to be overrode with inline styles*/
-    background: url(http://placekitten.com/720/405/) no-repeat center center;
-    background-size: cover;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-
-#landing_page #selfie .responsive_image {
-    padding-bottom: 75%;
-}
-
-/*** Let's get responsive ***/
-@media (min-height: 700px) or (max-width: 800px){
-    #landing_page #navbar .responsive_image {
-        padding-bottom: 75%;
-    }
-
-    #landing_page #intro {
-        font-size: 32px;
-    }
-}
-
-@media (max-height: 600px) {
-    #landing_page #selfie .responsive_image {
-        padding-bottom: 56.25%;
-    }
+#landing-page .feature .action-list {
+    text-align: right;
 }

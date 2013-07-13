@@ -2,48 +2,40 @@
 <html>
 <head>
     <title>John Sullivan</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
     <link href="flashy.css" rel="stylesheet" type="text/css">
     <script src="processing.js"></script>
-    <script src="jquery-1.10.2.min.js"></script>
-    <script src="jquery-ui-1.10.3.custom.min.js"></script>
 </head>
-<body id="landing_page">
-    <canvas id="background" data-processing-sources="life.pde"></canvas>
-    <div id="content_container">
-        <div id="badge">
-            <div id="selfie">
-                <div style="background-image: url(self.png)" class="responsive_image"></div>
-            </div>
-            <div id="badge_description">
-                <div>
-                    <h1 id="title">John Sullivan</h1>
-                </div>
-            </div>
-        </div>
-        <div id="intro_block">
-            <div id="intro">
-                <p>
-                    Welcome to my portfolio. I am a Software Engineer in California and I love making all sorts of software.
-                </p>
-            </div>
-        </div>
-        <div id="navbar">
-            <div class="nav_item">
-                <a href="#" class="nav_tile responsive_image" style="background-image: url(images/project1.png)">
-                    <div class="caption">Projects</div>
-                </a>
-            </div>
-            <div class="nav_item">
-                <a href="#" class="nav_tile responsive_image" style="background-image: url(images/testimonial1.png)">
-                    <div class="caption">Testimonials</div>
-                </a>
-            </div>
-            <div class="nav_item">
-                <a href="#" class="nav_tile responsive_image" style="background-image: url(images/testimonial2.png)">
-                    <div class="caption">About Me</div>
-                </a>
-            </div>
+<body id="landing-page">
+    <!-- <canvas id="background" data-processing-sources="life.pde"></canvas> -->
+    <h1 id="title">John Sullivan</h1>
+    <p id="intro">
+        Welcome to my portfolio and personal web site. I am a Software Engineer in California and I love building all sorts of software.
+    </p>
+    <div class="feature">
+        <p>
+            I've built some interesting projects I'd love to show you.
+        </p>
+        <div class="action-list">
+            <a class="pure-button pure-button-primary" href="#">See my Projects</a>
         </div>
     </div>
+    <div class="feature">
+        <p>
+            Wondering what it's like working with me? I've managed to get a few people to say some nice things about me.
+        </p>
+        <div class="action-list">
+            <a class="pure-button pure-button-primary" href="#">Read some Testimonials</a>
+        </div>
+    </div>
+    <div class="feature">
+        <p>
+            Want to learn about me a little more directly? I've written down some information you might be interested in.
+        </p>
+        <div class="action-list">
+            <a class="pure-button pure-button-primary" href="#">About Me</a>
+        </div>
+    </div>
+    <div class="pure-u-1-2"></div>
 </body>
 </html>
