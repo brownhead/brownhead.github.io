@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600);
 
 body {
     padding: 0px;
@@ -9,11 +9,11 @@ body {
  * detecting the width of the window that includes the vertical scroll bar.
  * This can cause a horizontal scroll bar to appear if I didn't add this rule.
  */
-#canvas_container {
+#background {
+    position: fixed;
     width: 100%;
+    height: 100%;
     overflow: hidden;
-    height: 600px;
-    position: absolute;
     left: 0px;
     top: 0px;
     z-index: -1;
@@ -23,73 +23,84 @@ body {
     font-family: "Open Sans", sans-serif;
     background-color: #FFFFFF;
     color: #161616;
-    padding: 80px 0px;
+    padding: 4px 0px;
 }
 
-/* The badge will be positioned via javascript, but in case JavaScript is
- * disabled this will be the styling that is used.
- */
-#landing_page #badge_fallback {
-    width: 100%;
+#content_container {
+    width: 65%;
+    margin: 0px auto;
 }
 
 #landing_page #badge {
     display: table;
-    margin: auto;
+    /*margin: 0px auto;*/
+    width: 100%;
+    border-bottom: 4px solid #FFF;
 }
 
 #landing_page #title {
-    font-size: 78px;
-    font-weight: 400;
+    font-size: 54px;
+    font-weight: 600;
     margin: 0px;
 }
 
 #landing_page #selfie {
-    padding: 4px;
-    background-color: white;
-    border: 1px solid #DDDDDD;
     display: table-cell;
+    width: 33%;
 }
 
 #landing_page #badge_description {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    padding-left: 30px;
+    background-color: #D96868;
+    border-left: 4px solid #FFF;
+    color: white;
+}
+
+#landing_page #intro_block {
+    /*margin: 0px auto;*/
+    width: 100%;
 }
 
 #landing_page #intro {
-    margin: 50px auto 0px auto;
     background-color: #DCE0DF;
     padding: 30px;
     font-size: 24px;
-    width: 600px;
 }
 
 /* Nav stuff */
 #navbar {
     display: table;
     width: 100%;
-    background-color: #DCE0DF;
-    border-top: 10px solid #837E78;
+    border-top: 4px solid #FFF;
+    table-layout: fixed;
 }
 
-#landing_page a.nav_item {
+#landing_page .nav_item {
     display: table-cell;
     text-align: center;
     font-size: 18px;
-    padding: 30px 0px;
     color: #000000;
+    border-left: 4px solid #FFF;;
+}
+
+#landing_page .nav_item:first-child {
+    border: none;
+}
+
+#landing_page .nav_item > a {
     text-decoration: none;
 }
 
-#landing_page a.nav_item:hover {
-    background-color: #C1D2CC;
+#landing_page .nav_item > a:hover > .caption {
+    opacity: 0.8;
 }
 
 #landing_page .nav_tile {
     display: inline-block;
-    width: 300px;
+    width: 100%;
+    position: relative;
 }
 
 /* Making the image a block is necessary because otherwise there will be an
@@ -101,21 +112,46 @@ body {
 }
 
 #landing_page .nav_tile > .caption {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
     background-color: #837E78;
     padding: 10px 0px;
     color: #FFFFFF;
+    opacity: 0.5;
 }
 
 #landing_page #project_galah {
-    margin: 0px auto;
-    width: 600px;
+    /*margin: 0px auto;*/
+    width: 668px;
     font-size: 24px;
 }
 
-#landing_page .images {
-
+#landing_page .responsive_image {
+    /* This is meant to be overrode with inline styles*/
+    background: url(http://placekitten.com/720/405/) no-repeat center center;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 56.25%;
 }
 
-#landing_page .description {
+#landing_page #selfie .responsive_image {
+    padding-bottom: 75%;
+}
 
+/*** Let's get responsive ***/
+@media (min-height: 700px) or (max-width: 800px){
+    #landing_page #navbar .responsive_image {
+        padding-bottom: 75%;
+    }
+
+    #landing_page #intro {
+        font-size: 32px;
+    }
+}
+
+@media (max-height: 600px) {
+    #landing_page #selfie .responsive_image {
+        padding-bottom: 56.25%;
+    }
 }

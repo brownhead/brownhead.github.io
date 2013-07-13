@@ -8,56 +8,40 @@
     <script src="jquery-ui-1.10.3.custom.min.js"></script>
 </head>
 <body id="landing_page">
-    <div id="landing_area">
-        <div id="canvas_container">
-            <canvas id="background" data-processing-sources="life.pde"></canvas>
-        </div>
-        <div id="badge_fallback">
-            <div id="badge">
-                <img id="selfie" src="self.png" width="210" height="210">
-                <div id="badge_description">
+    <canvas id="background" data-processing-sources="life.pde"></canvas>
+    <div id="content_container">
+        <div id="badge">
+            <div id="selfie">
+                <div style="background-image: url(self.png)" class="responsive_image"></div>
+            </div>
+            <div id="badge_description">
+                <div>
                     <h1 id="title">John Sullivan</h1>
                 </div>
             </div>
+        </div>
+        <div id="intro_block">
             <div id="intro">
-                Welcome to my portfolio. I am a Software Engineer in California and I love making all sorts of software. Look around to learn about me and the work I do.
+                <p>
+                    Welcome to my portfolio. I am a Software Engineer in California and I love making all sorts of software.
+                </p>
             </div>
         </div>
-    </div>
-    <div id="navbar">
-        <a href="#" class="nav_item">
-            <div class="nav_tile">
-                <img width="300" height="225" src="images/project1.png">
-                <div class="caption">Projects</div>
+        <div id="navbar">
+            <div class="nav_item">
+                <a href="#" class="nav_tile responsive_image" style="background-image: url(images/project1.png)">
+                    <div class="caption">Projects</div>
+                </a>
             </div>
-        </a>
-        <a href="#" class="nav_item">
-            <div class="nav_tile">
-                <img width="300" height="225" src="images/testimonial1.png">
-                <div class="caption">Testimonials</div>
+            <div class="nav_item">
+                <a href="#" class="nav_tile responsive_image" style="background-image: url(images/testimonial1.png)">
+                    <div class="caption">Testimonials</div>
+                </a>
             </div>
-        </a>
-        <a href="#" class="nav_item">
-            <div class="nav_tile">
-                <img width="300" height="225" src="images/about.png">
-                <div class="caption">About Me</div>
-            </div>
-        </a>
-    </div>
-    <div id="project_area">
-        <div id="project_galah">
-            <div class="description">
-                <h2>Galah</h2>
-                <p>
-                    I started the company Galah Group LLC with a friend of mine, Chris Manghane, to develop and promote our product <a href="http://www.galahgroup.com/galah">Galah</a>.
-                </p>
-                <p>
-                    Working on Galah has been an excuse to learn a great deal of things I would never have learned otherwise, and working closely with the system administrators and faculty at UCR who are using our product has been an amazing learning experience. I think I've learned more developing this project than any other project I've ever been able to work on.
-                </p>
-            </div>
-            <div class="images">
-                <div style="text-align: right"><img width="300" height="225" src="images/project2.png"></div>
-                <div style="text-align: right"><img width="300" height="225" src="images/project3.png"></div>
+            <div class="nav_item">
+                <a href="#" class="nav_tile responsive_image" style="background-image: url(images/testimonial2.png)">
+                    <div class="caption">About Me</div>
+                </a>
             </div>
         </div>
     </div>
