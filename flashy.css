@@ -1,40 +1,159 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600);
 
 body {
-    padding: 0px;
-    margin: 0px auto;
-    font-size: 150%;
-    width: 63%;
-}
-
-/* My logic powering the canvas powering the canvas uses a naive way of
- * detecting the width of the window that includes the vertical scroll bar.
- * This can cause a horizontal scroll bar to appear if I didn't add this rule.
- */
-#background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
-
-#landing-page {
     font-family: "Open Sans", sans-serif;
     background-color: #FFFFFF;
     color: #161616;
-    padding: 4px 0px;
+    font-size: 150%;
+    padding-bottom: 4em;
 }
 
-#landing-page .feature {
-    background-color: #FAFAFA;
-    border: 1px solid #CCC;
+a {
+    text-decoration: none;
+    color: #3b8bba;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px dashed #CCC;
+}
+
+.feature > blockquote {
+    position: relative;
+    margin-left: 0em;
+    padding-left: 0em;
+}
+
+#badge {
+    display: table;
+    margin: 2em 0em;
+}
+
+#badge > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#selfie {
+    width: 10em;
+    height: 10em;
+    background: url(self.png) no-repeat center center;
+    background-size: cover;
+
+    border-radius: 5em;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+}
+
+#intro {
+    display: block;
+    margin-left: 1em;
     padding: 1em;
-    margin-bottom: 1em;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid #EEE;
+
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
 }
 
-#landing-page .feature .action-list {
+#topnav {
+    text-align: center;
+    background-color: #4CB3B8;
+}
+
+#topnav ul {
+    display: inline-block;
+    margin: 0em;
+    padding: 0em;
+}
+
+#topnav li{
+    display: inline-block;
+    list-style: none;
+}
+
+#topnav li > a {
+    opacity: 0.8;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+}
+
+#topnav li.selected > a{
+    opacity: 1;
+}
+
+#topnav li:not(.selected) > a:hover {
+    opacity: 0.9;
+}
+
+#content {
+    width: 80%;
+    margin: 0em auto;
+}
+
+#page-footer {
+    font-size: 0.8em;
     text-align: right;
+    color: #AAA;
+}
+
+#page-footer a {
+    text-decoration: none;
+    color: #A1CCE6;
+}
+
+#landing-page #work-status {
+    padding: 1em;
+}
+
+#landing-page .feature > header > h3 {
+    margin-bottom: 0.2em;
+}
+
+#landing-page .feature > header > .subtitle {
+    font-size: 0.8em;
+    color: #888;
+    font-weight: normal;
+}
+
+#landing-page .feature .actions {
+    /*text-align: center;*/
+}
+
+#landing-page .feature + .seemore {
+    margin-top: 1em;
+}
+
+#landing-page .seemore {
+    text-align: center;
+    padding: 1em 0em;
+}
+
+@media (max-width: 767px) {
+    #badge {
+        display: block;
+    }
+
+    #badge > div {
+        display: block;
+    }
+
+    #selfie {
+        display: none;
+    }
+
+    #intro {
+        margin-left: 0em;
+    }
+
+    #content {
+        width: 90%;
+    }
 }
