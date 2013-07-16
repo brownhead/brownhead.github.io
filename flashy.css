@@ -4,7 +4,7 @@ body {
     font-family: "Open Sans", sans-serif;
     background-color: #FFFFFF;
     color: #161616;
-    font-size: 150%;
+    font-size: 125%;
     padding-bottom: 4em;
 }
 
@@ -128,12 +128,36 @@ hr {
 }
 
 #landing-page .feature + .seemore {
-    margin-top: 1em;
+    margin-top: 1.75em;
 }
 
 #landing-page .seemore {
     text-align: center;
+}
+
+#landing-page .seemore > a {
+    display: block;
+    /*color: #3b8bba;*/
     padding: 1em 0em;
+    opacity: 0.8;
+}
+
+#landing-page #lcolumn {
+    padding-right: 1em;
+}
+
+#landing-page #rcolumn {
+    padding-left: 1em;
+}
+
+#projects header > h3 {
+    margin-bottom: 0.2em;
+}
+
+#projects header > .subtitle {
+    font-size: 0.8em;
+    color: #888;
+    font-weight: normal;
 }
 
 @media (max-width: 767px) {
@@ -155,5 +179,9 @@ hr {
 
     #content {
         width: 90%;
+    }
+
+    #landing-page #lcolumn, #landing-page #rcolumn {
+        padding: 0em;
     }
 }
