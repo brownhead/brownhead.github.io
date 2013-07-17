@@ -131,16 +131,16 @@ hr {
     margin-top: 1.75em;
 }
 
-#landing-page .seemore {
+/*#landing-page .seemore {
     text-align: center;
-}
+}*/
 
-#landing-page .seemore > a {
+/*#landing-page .seemore > a {
     display: block;
-    /*color: #3b8bba;*/
+    color: #3b8bba;
     padding: 1em 0em;
     opacity: 0.8;
-}
+}*/
 
 #landing-page #lcolumn {
     padding-right: 1em;
