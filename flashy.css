@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600|Pacifico);
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #FFFFFF;
+    background-color: #FEFEFE;
     color: #161616;
     font-size: 125%;
     padding-bottom: 4em;
@@ -11,6 +11,10 @@ body {
 a {
     text-decoration: none;
     color: #3b8bba;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h2 {
@@ -22,10 +26,34 @@ hr {
     border-bottom: 1px dashed #CCC;
 }
 
+#main-features {
+    margin-bottom: 2em;
+}
+
+.feature {
+    padding: 1em;
+    margin-bottom: 1em;
+
+    background-color: rgb(250, 250, 250);
+    border: 1px solid #EEE;
+
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+.feature h3 {
+    margin-top: 0em;
+}
+
 .feature > blockquote {
     position: relative;
     margin-left: 0em;
     padding-left: 0em;
+}
+
+#logo {
+    font-family: 'Pacifico', sans-serif;
 }
 
 #badge {
@@ -63,11 +91,11 @@ hr {
 
 #topnav {
     text-align: center;
-    background-color: #4CB3B8;
+    background-color: #5CACB5;
 }
 
 #topnav ul {
-    display: inline-block;
+    display: block;
     margin: 0em;
     padding: 0em;
 }
@@ -81,7 +109,7 @@ hr {
     opacity: 0.8;
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: #FFF;
     padding: 0.5em;
 }
 
@@ -91,6 +119,7 @@ hr {
 
 #topnav li:not(.selected) > a:hover {
     opacity: 0.9;
+    text-decoration: underline;
 }
 
 #content {
@@ -99,6 +128,7 @@ hr {
 }
 
 #page-footer {
+    padding-top: 1em;
     font-size: 0.8em;
     text-align: right;
     color: #AAA;
@@ -107,6 +137,10 @@ hr {
 #page-footer a {
     text-decoration: none;
     color: #A1CCE6;
+}
+
+#page-footer a:hover {
+    text-decoration: underline;
 }
 
 #landing-page #work-status {
@@ -125,6 +159,10 @@ hr {
 
 #landing-page .feature .actions {
     /*text-align: center;*/
+}
+
+#landing-page .seemore {
+    text-align: center;
 }
 
 #landing-page .feature + .seemore {
@@ -169,8 +207,13 @@ hr {
         display: block;
     }
 
+    #selfie-container {
+        text-align: center;
+    }
+
     #selfie {
-        display: none;
+        display: inline-block;
+        margin-bottom: 1em;
     }
 
     #intro {
@@ -178,10 +221,16 @@ hr {
     }
 
     #content {
-        width: 90%;
+        width: 95%;
     }
 
     #landing-page #lcolumn, #landing-page #rcolumn {
         padding: 0em;
+    }
+
+    #intro, .feature, #selfie {
+        border-radius: 0em;
+        -webkit-border-radius: 0em;
+        -moz-border-radius: 0em;
     }
 }
