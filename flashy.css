@@ -89,23 +89,43 @@ hr {
     -moz-border-radius: 0.5em;
 }
 
-#topnav {
-    text-align: center;
+#top-header {
     background-color: #5CACB5;
 }
 
-#topnav ul {
+#nav-table {
+    display: table;
+    width: 80%;
+    margin: 0em auto;
+}
+
+#logo-container {
+    display: table-cell;
+    text-align: left;
+}
+
+#logo-container a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#top-nav {
+    display: table-cell;
+    text-align: right;
+}
+
+#top-nav ul {
     display: block;
     margin: 0em;
     padding: 0em;
 }
 
-#topnav li{
+#top-nav li{
     display: inline-block;
     list-style: none;
 }
 
-#topnav li > a {
+#top-nav li > a {
     opacity: 0.8;
     display: inline-block;
     text-decoration: none;
@@ -113,11 +133,11 @@ hr {
     padding: 0.5em;
 }
 
-#topnav li.selected > a{
+#top-nav li.selected > a{
     opacity: 1;
 }
 
-#topnav li:not(.selected) > a:hover {
+#top-nav li:not(.selected) > a:hover {
     opacity: 0.9;
     text-decoration: underline;
 }
@@ -232,5 +252,15 @@ hr {
         border-radius: 0em;
         -webkit-border-radius: 0em;
         -moz-border-radius: 0em;
+    }
+
+    #nav-table {
+        display: block;
+        width: 95%;
+    }
+
+    #logo-container, #top-nav {
+        display: block;
+        text-align: center;
     }
 }
