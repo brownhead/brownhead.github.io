@@ -42,6 +42,11 @@ hr {
     -moz-border-radius: 0.5em;
 }
 
+a.pure-button-primary {
+    background-color: #5CADB5;
+    font-weight: 600;
+}
+
 .feature h3 {
     margin-top: 0em;
 }
