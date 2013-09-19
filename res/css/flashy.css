@@ -1,0 +1,295 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #FEFEFE;
+    color: #161616;
+    font-size: 125%;
+    padding-bottom: 4em;
+}
+
+#logo {
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #3b8bba;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px dashed #CCC;
+}
+
+a.pure-button-primary {
+    background-color: #5CADB5;
+    font-weight: 600;
+}
+
+#landing-page #main-features {
+    margin-bottom: 2em;
+}
+
+#landing-page .feature {
+    padding: 1em;
+    margin-bottom: 1em;
+
+    background-color: rgb(250, 250, 250);
+    border: 1px solid #EEE;
+
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+#landing-page .feature h3 {
+    margin-top: 0em;
+}
+
+#landing-page .feature > blockquote {
+    position: relative;
+    margin-left: 0em;
+    padding-left: 0em;
+}
+
+#landing-page h2 {
+    text-transform: uppercase;
+}
+
+#badge {
+    display: table;
+    margin: 2em 0em;
+}
+
+#badge > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#selfie {
+    width: 10em;
+    height: 10em;
+    background: url(/res/img/self.png) no-repeat center center;
+    background-size: cover;
+
+    border-radius: 5em;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+}
+
+#intro {
+    display: block;
+    margin-left: 1em;
+    padding: 1em;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid #EEE;
+
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+
+#top-header {
+    background-color: #5CACB5;
+}
+
+#nav-table {
+    display: table;
+    width: 80%;
+    margin: 0em auto;
+}
+
+#logo-container {
+    display: table-cell;
+    text-align: left;
+}
+
+#logo-container a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#top-nav {
+    display: table-cell;
+    text-align: right;
+}
+
+#top-nav ul {
+    display: block;
+    margin: 0em;
+    padding: 0em;
+}
+
+#top-nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+#top-nav li > a {
+    opacity: 0.8;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    padding: 0.5em;
+}
+
+#top-nav li.selected > a{
+    opacity: 1;
+}
+
+#top-nav li:not(.selected) > a:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+#content {
+    width: 80%;
+    margin: 0em auto;
+}
+
+#page-footer {
+    padding-top: 1em;
+    font-size: 0.8em;
+    text-align: right;
+    color: #AAA;
+}
+
+#page-footer a {
+    text-decoration: none;
+    color: #A1CCE6;
+}
+
+#page-footer a:hover {
+    text-decoration: underline;
+}
+
+#landing-page #work-status {
+    padding: 1em;
+}
+
+#landing-page .feature > header > h3 {
+    margin-bottom: 0.2em;
+}
+
+#landing-page .feature > header > .subtitle {
+    font-size: 0.8em;
+    color: #888;
+    font-weight: normal;
+}
+
+#landing-page .feature .actions {
+    /*text-align: center;*/
+}
+
+#landing-page .seemore {
+    text-align: center;
+}
+
+#landing-page .feature + .seemore {
+    margin-top: 1.75em;
+}
+
+/*#landing-page .seemore {
+    text-align: center;
+}*/
+
+/*#landing-page .seemore > a {
+    display: block;
+    color: #3b8bba;
+    padding: 1em 0em;
+    opacity: 0.8;
+}*/
+
+#landing-page #lcolumn {
+    padding-right: 1em;
+}
+
+#landing-page #rcolumn {
+    padding-left: 1em;
+}
+
+#landing-page #projects header > h3 {
+    margin-bottom: 0.2em;
+}
+
+#landing-page #projects header > .subtitle {
+    font-size: 0.8em;
+    color: #888;
+    font-weight: normal;
+}
+
+#projects-page .project > header > h2 {
+    /*display: inline;*/
+    margin-bottom: 0em;
+}
+
+#projects-page .project > header > .language,
+        #projects-page .project > header > time {
+    font-size: 80%;
+    font-style: italic;
+}
+
+#projects-page .project-headline {
+    /*font-weight: bold;*/
+}
+
+#projects-page .project {
+    margin-bottom: 2em;
+}
+
+/*#projects-page .project > header > .language:before,*/
+        #projects-page .project > header > time:before {
+    content: "\2022";
+    margin: 0em 0.5em;
+    font-style: normal;
+}
+
+@media (max-width: 767px) {
+    #badge {
+        display: block;
+    }
+
+    #badge > div {
+        display: block;
+    }
+
+    #selfie-container {
+        text-align: center;
+    }
+
+    #selfie {
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+
+    #intro {
+        margin-left: 0em;
+    }
+
+    #content {
+        width: 95%;
+    }
+
+    #landing-page #lcolumn, #landing-page #rcolumn {
+        padding: 0em;
+    }
+
+    #intro, .feature, #selfie {
+        border-radius: 0em;
+        -webkit-border-radius: 0em;
+        -moz-border-radius: 0em;
+    }
+
+    #nav-table {
+        display: block;
+        width: 95%;
+    }
+
+    #logo-container, #top-nav {
+        display: block;
+        text-align: center;
+    }
+}
