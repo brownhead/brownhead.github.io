@@ -41,7 +41,7 @@ mv ./site/* "$TEMP_DIR"/
 # Tranfer the site into the master branch.
 git checkout master
 rm -rf *
-cp -f "$TEMP_DIR"/* ./
+cp -rf "$TEMP_DIR"/* ./
 
 # Add the CNAME file
 echo johnsullivan.name > CNAME
