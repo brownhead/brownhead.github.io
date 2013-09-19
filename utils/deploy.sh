@@ -16,6 +16,9 @@ function what_branch {
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# This will ensure the user is visually prompted upon failure
+trap "echo FAILURE: An error has occured! >&2" EXIT
+
 # From here on every command will be printed out before it is executed
 set -x
 
@@ -50,3 +53,7 @@ set +x
 echo
 echo "${GREEN}DONE${RESET}. You should now examine the state of the current"
 echo "branch and make an appropriate commit, then push the changes to github."
+
+# Unset the trap so we don't freak the user out by telling them an error has
+# occured when everything went fine.
+trap - EXIT
