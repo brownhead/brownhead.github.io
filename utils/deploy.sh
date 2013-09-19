@@ -1,5 +1,19 @@
 #!/usr/bin/env bash
 
+#: what_branch
+#:
+#: Prints the name of the git branch you are currently on.
+#:
+#: .. note::
+#:
+#:    Pulled from `this StackOverflow post <http://stackoverflow.com/a/1593487/1989056>`_.
+function what_branch {
+    branch_name="$(git symbolic-ref HEAD 2>/dev/null)" ||
+    branch_name="(unnamed branch)"     # detached HEAD
+
+    echo ${branch_name##refs/heads/}
+}
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # From here on every command will be printed out before it is executed
@@ -24,7 +38,7 @@ mv ./site/* "$TEMP_DIR"/
 # Tranfer the site into the master branch.
 git checkout master
 rm -rf *
-mv -f "$TEMP_DIR"/* ./
+cp -f "$TEMP_DIR"/* ./
 
 # Add the CNAME file
 echo johnsullivan.name > CNAME
