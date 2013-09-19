@@ -14,7 +14,7 @@
             </div>
             <nav id="top-nav">
                 <ul>
-                    <li><a href="/projects.htm">Projects</a></li>
+                    <li class="selected"><a href="/projects.htm">Projects</a></li>
                     <li><a href="#">Testimonials</a></li>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Contact</a></li>
@@ -23,9 +23,21 @@
         </div>
     </header>
     <div id="content">
-        <header id="intro">
-            I have been programming since I was in elementary school s I have many cool little projects I've breathed life into. Below are some of the projects I feel comfortable sharing with the world.
+        <header id="badge">
+            <!-- Container elements are necessary here because this will badge
+              -- be turned into a table via CSS -->
+            <div id="selfie-container">
+                <figure id="selfie" role="img"></figure>
+            </div>
+            <div id="intro-container">
+                <figcaption id="intro">
+                    <b>These are some of the projects I've created</b>, some of which date back to when I was in middle school.
+                </figcaption>
+            </div>
         </header>
+        <!-- <header id="intro">
+            <b>These are some of the projects I've created</b>. I began programming when I was in elementary school so there are many of them.
+        </header> -->
         <hr />
         <article class="project">
             <header>
@@ -33,436 +45,43 @@
                 <span class="language">Python</span>
                 <time datetime="2011/now">2011 to now</time>
             </header>
-            <p>
+            <p class="project-headline">
                 An automated grading system geared towards processing computer programming assignments.
             </p>
             <p>
-                I began this ambitious project Freshman year of college after the System Administrator there, Victor Hill, told me he thought it would be cool if they had something there to automate the grading process. After two years of planning and development I am still working on it regularly. It is currently deployed at the University of California, Riverside, and I hope other schools will start to use it as well.
+                I started this project Freshman year of college in 2010 with the intent of creating a scalable system that was capable of grading students' assignment and providing nearly-instant feedback. At the beginning of 2013, the University of California, Riverside began using it in one of their classes. Now it is being used extensively in several courses including UCR's new online course offerings. Chris Manghane joined me in my developement around that time and together we've been improving it to the best of our abilities.
+            </p>
+            <p>
+                Galah is a distributed system that is (theoretically) able to scale up to any number of users. It tests each student's code by placing their code in a clean virtual machine with the instructor's test harness. It is fairly stable and was able to perform well with no intervention whatsoever during my 3-month long internship over the summer of 2013.
+            </p>
+            <p>
+                Working on Galah has been more fun than I ever expected, and though I have doubts about whether Galah will stand above its emerging competitors, I hope to continue development on it long into the future.
             </p>
             <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Superzippy</h3>
-                <span class="language">Python</span>
-                <time datetime="2011/now">2013 to now</time>
-            </header>
-            <p>
-                A new way to distribute multi-file, multi-dependency Python scripts that is just super.
-            </p>
-            <p>
-                When writing Python scripts, I often run into the unpleasant truth that unless I am creating something for my fellow Python developers, I must restrict my script to a single file. I have tried to laugh in the face of this restriction before and create lengthy installation instructions but the difficulties are always too much to deal with. Superzippy solves this problem by providing an easy way to transform a multi-file, multi-dependency Python script into a single file.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Galah Interact</h3>
-                <span class="language">Python</span>
-                <time datetime="2011/now">2013 to now</time>
-            </header>
-            <p>
-                A Python framework for creating test harnesses to grade students' code.
-            </p>
-            <p>
-                After a couple weeks of creating test harnesses for Galah by copy and pasting bits of code together, I realised I needed to make creating test harnesses a much simpler process. Thus Chris Manghane (who codeveloped Galah with me) and I created this framework.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Anti-Gravity Connect 4</h3>
-                <span class="language">Flash, ActionScript</span>
-                <time datetime="2008">2008</time>
-            </header>
-            <p>
-                A flash game that puts an interesting twist into the classic game of Connect 4.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Min-Max Heap</h3>
-                <span class="language">C++</span>
-                <time datetime="2011">2011</time>
-            </header>
-            <p>
-                An C++ implementation of a very cool data structure that allows efficient removal of the largest and the smallest item from the same heap.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>BH Cloak</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2005/2007">2005 to 2007</time>
-            </header>
-            <p>
-                A Visual Basic 6 application that lets you hide any window on your Windows PC immediately, and temporarily, at the press of a hotkey.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Flair Fairy</h3>
-                <span class="language">Python</span>
-                <time datetime="2012">2012</time>
-            </header>
-            <p>
-                A Reddit bot created in Python that is capable of adding flair (a type of meta-information on Reddit) to posts that link to paste bins.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>NoIP2 Init Script</h3>
-                <span class="language">Bash</span>
-                <time datetime="2013">2013</time>
-            </header>
-            <p>
-                An init script for the very useful NoIP2 service.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Pong</h3>
-            </header>
-            <p>
-                Few programmers can go their lives without making their own implementation of the classic Pong. This is my take on the game written with Visual Basic 6.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Work Log</h3>
-                <span class="language">Batch</span>
-                <time datetime="2010">2010</time>
-            </header>
-            <p>
-                A simple Windows Batch file that can help you keep track of your working hours.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Onyx</h3>
-                <span class="language">C++</span>
-                <time datetime="2009">2009</time>
-            </header>
-            <p>
-                A C++ library useful for creating bots that play games for you.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>WoW Autofisher</h3>
-                <span class="language">C++</span>
-                <time datetime="2009">2009</time>
-            </header>
-            <p>
-                A World of Warcraft Bot built with C++ and my Onyx library that is capable of fishing all day for you.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Brown Button and Brown Bar</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2007">2007</time>
-            </header>
-            <p>
-                A pair of custom-made Visual Basic 6 controls (a button and a progress bar) that let you give a distinctive look to your applications.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Project Editor</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2006">2006</time>
-            </header>
-            <p>
-                A small Visual Basic 6 application I created to help me moderate a programming forum that no longer exists.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>AutoMe Test</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2009">2009</time>
-            </header>
-            <p>
-                A series of programming puzzles that were meant to test your ability to create bots for games.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>BH Highscores</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2007">2007</time>
-            </header>
-            <p>
-                A program that showed you how you stacked up against other players in the popular game RuneScape.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>BH IRC</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2011">2011</time>
-            </header>
-            <p>
-                A Visual Basic 6 control that made it easy to interact with an IRC server.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Profiler</h3>
-                <span class="language">C++</span>
-                <time datetime="2010">2010</time>
-            </header>
-            <p>
-                A C++ library that makes it easy to profile your code.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>BH Ribbon</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2009">2009</time>
-            </header>
-            <p>
-                A Visual Basic 6 control that emulates the Ribbon toolbar that is seen at the top of the recent Microsoft Word versions.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>BltTile</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2006">2006</time>
-            </header>
-            <p>
-                A small function that is very handy when drawing tiles from a tile sheet.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Encryption</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2004">2004</time>
-            </header>
-            <p>
-                My very own encryption algorithm that I created before knowing anything at all about Cryptography. Needless to say, don't use this in a production application, please.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Labryinthus Ob Camelopardum</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2009">2009</time>
-            </header>
-            <p>
-                A top-down short-adventure game that puts you in control of the Chosen One who has been tasked with retrieving the lost Spirit Giraffe.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Lightning</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2005">2005</time>
-            </header>
-            <p>
-                A toy program that renders, what looks like, many series of lightning strikes.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Paddle</h3>
-                <span class="language">Visual Basic 6</span>
-                <time datetime="2008">2008</time>
-            </header>
-            <p>
-                A Visual Basic 6 implementation of the classic game Breakout.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Breakout</h3>
-                <span class="language">C++</span>
-                <time datetime="2009">2009</time>
-            </header>
-            <p>
-                A C++ implementation of the classic game Breakout.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Square Selection</h3>
-                <span class="language">C++</span>
-                <time datetime="2006">2006</time>
-            </header>
-            <p>
-                A cool Windows program that lets you select any area of your screen with your mouse while providing you with a pleasing visual effect.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>World List</h3>
-                <span class="language">C++</span>
-                <time datetime="2005">2005</time>
-            </header>
-            <p>
-                A program that shows you stats on all of the available "worlds" in the popular game RuneScape.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>BH Bot</h3>
-                <span class="language">C++</span>
-                <time datetime="2005">2005</time>
-            </header>
-            <p>
-                An IRC bot that is sure to liven any channel.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Trash Boy</h3>
-                <span class="language">C#</span>
-                <time datetime="2011">2011</time>
-            </header>
-            <p>
-                A Windows Phone game that puts you in control of Trash Boy who is trying to save the world, one piece of trash at a time.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Particle Fun</h3>
-                <span class="language">C++</span>
-                <time datetime="2009">2009</time>
-            </header>
-            <p>
-                A C++ program that attempted to emulate the effect of the Liquid Particles Chrome Experiment.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>XOR Decipher</h3>
-                <span class="language">C</span>
-                <time datetime="2008">2008</time>
-            </header>
-            <p>
-                A C program that can quickly brute force ciphertext encrypted with a simple 3 character XOR algorithm.
-            </p>
-            <footer class="actions">
-                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
-            </footer>
-        </article>
-        <article class="project">
-            <header>
-                <h3>Sudoku</h3>
-                <span class="language">C++</span>
-                <time datetime="2011">2011</time>
-            </header>
-            <p>
-                A set of classes and tools that could be useful for creating a Sudoku game or solver.
-            </p>
-            <footer class="actions">
+                <a href="http://imgur.com/a/yqdDO" class="pure-button">Screenshots</a>
+                <a href="http://www.galahgroup.com/galah" class="pure-button">Website</a>
                 <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
             </footer>
         </article>
         <hr />
-        <footer id="page-footer">
-            <section>
-                Copyright 2013 John Sullivan. <a href="http://creativecommons.org/licenses/by-sa/3.0/">Some rights reserved</a>.
-            </section>
-            <section>
-                Hosted on <a href="http://pages.github.com/">GitHub pages</a>.
-            </section>
-            <section>
-                <a href="#">Read about this site.</a>
-            </section>
-            </nav>
-        </footer>
+        <article class="project">
+            <header>
+                <h2>Processing Life</h2>
+                <span class="language">processing</span>
+                <time datetime="2013">2013</time>
+            </header>
+            <p class="project-headline">
+                A small experiment with <a href="http://processingjs.org/">Processing.js</a>.
+            </p>
+            <p>
+                I created this experiment after seeing <a href="http://carlosbergen.com">Carlos Bergen's simple website</a>. I didn't want to simply clone his website though, so I decided to make an interesting effect based off of <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a> which has always fascinated me. Many hours, and a few cups of coffee later, I had my own little website that I could show off.
+            </p>
+            <footer class="actions">
+                <a href="http://imgur.com/a/yqdDO" class="pure-button">Screenshots</a>
+                <a href="http://www.galahgroup.com/galah" class="pure-button">Website</a>
+                <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
+            </footer>
+        </article>
     </div>
 </body>
 </html>

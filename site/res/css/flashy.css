@@ -59,17 +59,17 @@ a.pure-button-primary {
     text-transform: uppercase;
 }
 
-#landing-page #badge {
+#badge {
     display: table;
     margin: 2em 0em;
 }
 
-#landing-page #badge > div {
+#badge > div {
     display: table-cell;
     vertical-align: middle;
 }
 
-#landing-page #selfie {
+#selfie {
     width: 10em;
     height: 10em;
     background: url(/res/img/self.png) no-repeat center center;
@@ -80,7 +80,7 @@ a.pure-button-primary {
     -moz-border-radius: 5em;
 }
 
-#landing-page #intro {
+#intro {
     display: block;
     margin-left: 1em;
     padding: 1em;
@@ -230,6 +230,14 @@ a.pure-button-primary {
         #projects-page .project > header > time {
     font-size: 80%;
     font-style: italic;
+}
+
+#projects-page .project-headline {
+    /*font-weight: bold;*/
+}
+
+#projects-page .project {
+    margin-bottom: 2em;
 }
 
 /*#projects-page .project > header > .language:before,*/
