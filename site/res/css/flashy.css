@@ -240,8 +240,17 @@ a.pure-button-primary {
     margin-bottom: 2em;
 }
 
-/*#projects-page .project > header > .language:before,*/
-        #projects-page .project > header > time:before {
+#projects-page .project > header > h2 > a {
+    color: #161616;
+    outline: none;
+}
+
+#projects-page .project > header > h2 > a:hover {
+    color: #161616;
+    text-decoration: none;
+}
+
+#projects-page .project > header > time:before {
     content: "\2022";
     margin: 0em 0.5em;
     font-style: normal;
