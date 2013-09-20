@@ -29,7 +29,7 @@ a.pure-button-primary {
     font-weight: 600;
 }
 
-#landing-page #main-features {
+#landing-page #projects {
     margin-bottom: 2em;
 }
 
@@ -240,11 +240,37 @@ a.pure-button-primary {
     margin-bottom: 2em;
 }
 
-/*#projects-page .project > header > .language:before,*/
-        #projects-page .project > header > time:before {
+#projects-page .project > header > h2 > a {
+    color: #161616;
+    outline: none;
+}
+
+#projects-page .project > header > h2 > a:hover {
+    color: #161616;
+    text-decoration: none;
+}
+
+#projects-page .project > header > time:before {
     content: "\2022";
     margin: 0em 0.5em;
     font-style: normal;
+}
+
+#about-page #tech-table {
+    margin-bottom: 2em;
+}
+
+#about-page #tech-table td, #about-page #tech-table th {
+    padding: 0.2em;
+}
+
+#about-page #tech-table th {
+    text-align: left;
+    padding-right: 2em;
+}
+
+#about-page #tech-table tr:nth-child(even) {
+    background-color: #EEE;
 }
 
 @media (max-width: 767px) {

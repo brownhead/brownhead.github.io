@@ -15,9 +15,8 @@
             <nav id="top-nav">
                 <ul>
                     <li class="selected"><a href="/projects.htm">Projects</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/about.htm">About Me</a></li>
+                    <li><a href="mailto:jsull003@ucr.edu">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,7 +37,7 @@
         <hr />
         <article class="project">
             <header>
-                <h2>Galah</h2>
+                <h2><a name="galah" href="#galah">Galah</a></h2>
                 <span class="language">Python</span>
                 <time datetime="2011/now">2011 to now</time>
             </header>
@@ -46,13 +45,13 @@
                 An automated grading system geared towards processing computer programming assignments.
             </p>
             <p>
-                I started this project Freshman year of college in 2010 with the intent of creating a scalable system that was capable of grading students' assignment and providing nearly-instant feedback. At the beginning of 2013, the University of California, Riverside began using it in one of their classes. Now it is being used extensively in several courses including UCR's new online course offerings. Chris Manghane joined me in my developement around that time and together we've been improving it to the best of our abilities.
+                I began this project in 2010 with the intent of creating a scalable system that could grade CS students' assignment and providing nearly-instant feedback. In December 2012, the University of California, Riverside began using it in one of their classes. Now it is being used extensively in several courses including UCR's new online course offerings. The schools hosts it at <a hef="https://galah.cs.ucr.edu">galah.cs.ucr.edu</a>, but you won't be able to play with it without being enrolled in a class unfortunately.
             </p>
             <p>
                 Galah is a distributed system that is (theoretically) able to scale up to any number of users. It tests each student's code by placing their code in a clean virtual machine with the instructor's test harness. It is fairly stable and was able to perform well with no intervention whatsoever during my 3-month long internship over the summer of 2013.
             </p>
             <p>
-                Working on Galah has been more fun than I ever expected, and though I have doubts about whether Galah will stand above its emerging competitors, I hope to continue development on it long into the future.
+                Working on Galah has been more fun than I ever expected, and I hope that eventually I'll be able to greatly improve the learning experience for CS students across the world.
             </p>
             <footer class="actions">
                 <a href="http://imgur.com/a/yqdDO" class="pure-button pure-button-primary">Screenshots</a>
@@ -63,29 +62,26 @@
         <hr />
         <article class="project">
             <header>
-                <h2>Processing Life</h2>
+                <h2><a name="life" href="#life">Processing Life</a></h2>
                 <span class="language">Processing</span>
                 <time datetime="2013">2013</time>
             </header>
             <p class="project-headline">
-                A small experiment with the Processing.js library.
+                A small experiment with the Processing.js library based on <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a>.
             </p>
             <p>
                 I created this experiment after seeing <a href="http://carlosbergen.com">Carlos Bergen's simple website</a>. I didn't want to simply clone his website though, so I decided to make an interesting effect based off of <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a> which has always fascinated me. Many hours, and a few cups of coffee later, I had my own little website that I could show off.
             </p>
-            <p>
-                The experiment now lives at <a href="http://johncs.us">johncs.us</a>. The domain of which is a play off my name which is John C. Sullivan (notice the last to initials are CS). I often joke (poorly) that I was born to be a Computer Scientist based off of my name.
-            </p>
             <footer class="actions">
                 <a href="http://johncs.us" class="pure-button pure-button-primary">Live Demo</a>
-                <a href="https://github.com/brownhead/processing-life" class="pure-button">GitHub</a>
                 <a href="http://processingjs.org/" class="pure-button">Processing.js</a>
+                <a href="https://github.com/brownhead/processing-life" class="pure-button">GitHub</a>
             </footer>
         </article>
         <hr />
         <article class="project">
             <header>
-                <h2>Superzippy</h2>
+                <h2><a name="superzippy" href="#superzippy">Superzippy</a></h2>
                 <span class="language">Python</span>
                 <time datetime="2011/now">2013 to now</time>
             </header>
@@ -95,14 +91,17 @@
             <p>
                 I often make little Python utilities that I'd like to share. Unfortunately, installing a Python program that's more than a few files can be intimidating to non-Python developers. Superzippy solves this problem by providing an easy way to transform my multi-file Python utilities into a single executable file.
             </p>
+            <p>
+                The motivation for this utility came from <a href="#galah">Galah</a> because we needed to distribute <a href="https://github.com/galah-group/galah-apiclient">a command line Python application</a> to teachers and TA's.
+            </p>
             <footer class="actions">
-                <a href="https://github.com/brownhead/superzippy#readme" class="pure-button pure-button-primary">GitHub</a>
+                <a href="https://github.com/brownhead/superzippy" class="pure-button pure-button-primary">GitHub</a>
             </footer>
         </article>
         <hr />
         <article class="project">
             <header>
-                <h2>Anti-Gravity Connect 4</h2>
+                <h2><a name="agc4" href="#agc4">Anti-Gravity Connect 4</a></h2>
                 <span class="language">Flash, ActionScript</span>
                 <time datetime="2008">2008</time>
             </header>
@@ -110,7 +109,7 @@
                 A flash game that puts a big twist on the classic game of Connect 4.
             </p>
             <p>
-                The game itself came before the program, and was devised in a particularly boring math class Sophemore year of high school. My friend and I would play regular Connect 4 on graph paper, but after many weeks of playing it we got a little bored so I came up with a twist on the classic game. I made the board into a round-ish shape and changed the rules so that you could go anywhere as long as that would make sense given that down was any of 4 different ways. Unfortunately, to this day, the rules are still hard for me to explain so you may want to wait for me to make a video before devoting your Saturday to learning the game.
+                The game itself came before the program, and was devised in a particularly dull math class Sophemore year of high school. My friend and I would play Connect 4 on graph paper but after many weeks of playing it we got a little bored so I came up with a twist on the classic game. I made the board into a round-ish shape and changed the rules so that you could go anywhere as long as that would make sense given that down was any of 4 different ways. Unfortunately, to this day, the rules are still hard for me to explain so you may want to wait for me to make a video before devoting your Saturday to learning the game.
             </p>
             <p>
                 I have left my young blunderings untouched, therefore the game has a few noticeable issues. It was my first ever (and one of my only) Flash games however, so the love and nostalgia I feel for it is great.
@@ -126,12 +125,12 @@
         <hr />
         <article class="project">
             <header>
-                <h2>Min-Max Heap</h2>
+                <h2><a name="min-max-heap" href="#min-max-heap">Min-Max Heap</a></h2>
                 <span class="language">C++</span>
                 <time datetime="2010">2010</time>
             </header>
             <p>
-                An C++ implementation of a very interesting data structure that allows efficient removal of the largest and the smallest item from the same heap.
+                A C++ implementation of a very interesting data structure that allows efficient removal of the largest and the smallest item from the same heap.
             </p>
             <p>
                 Freshman year of college I was working on an interesting program that would allow me to automatically discover my ideal course schedule. Along the way, I realized I needed a way to efficiently get both the maximum and minimum element from a heap. After looking around a little bit, I saw a description of a data structure called a Min-Max Heap that supposedly offered good performance. I crafted my own implementation of this heap, but I found out afterwards that another data structure (Interval Heaps) have better real-world performance. Regardless, I'm still very proud of my creation.
@@ -146,7 +145,7 @@
         <hr />
         <article class="project">
             <header>
-                <h2>Particles</h2>
+                <h2><a name="particles" href="#particles">Particles</a></h2>
                 <span class="language">C</span>
                 <time datetime="2009">2009</time>
             </header>
@@ -160,17 +159,21 @@
                 <a href="https://github.com/brownhead/particles" class="pure-button pure-button-primary">GitHub</a>
             </footer>
         </article>
+        <hr />
         <article class="project">
             <header>
-                <h2>Cloak</h2>
+                <h2><a name="cloak" href="#cloak">Cloak</a></h2>
                 <span class="language">Visual Basic 6</span>
                 <time datetime="2005/2007">2005 to 2007</time>
             </header>
             <p>
                 A Visual Basic 6 application that lets you hide any window on your Windows PC immediately, and temporarily, at the press of a hotkey.
             </p>
+            <p>
+                This was one of my first large applications and it went through at least three different major versions (the first two have been lost unfortunately) as I made my way through middle school.
+            </p>
             <footer class="actions">
-                <a href="https://github.com/brownhead/cloak" class="pure-button">GitHub</a>
+                <a href="https://github.com/brownhead/cloak" class="pure-button pure-button-primary">GitHub</a>
             </footer>
         </article>
     </div>
