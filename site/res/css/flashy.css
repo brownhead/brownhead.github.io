@@ -256,6 +256,23 @@ a.pure-button-primary {
     font-style: normal;
 }
 
+#about-page #tech-table {
+    margin-bottom: 2em;
+}
+
+#about-page #tech-table td, #about-page #tech-table th {
+    padding: 0.2em;
+}
+
+#about-page #tech-table th {
+    text-align: left;
+    padding-right: 2em;
+}
+
+#about-page #tech-table tr:nth-child(even) {
+    background-color: #EEE;
+}
+
 @media (max-width: 767px) {
     #badge {
         display: block;
