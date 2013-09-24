@@ -354,4 +354,12 @@ a.pure-button-primary {
         margin: 0em auto;
         float: none;
     }
+
+    #landing-page .leftcolumn .feature {
+        margin-right: 0em;
+    }
+
+    #landing-page .rightcolumn .feature {
+        margin-left: 0em;
+    }
 }
