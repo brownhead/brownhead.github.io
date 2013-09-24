@@ -6,6 +6,14 @@ body {
     padding-bottom: 4em;
 }
 
+img.project-shot {
+    display: block;
+    max-width: 100%;
+    float: left;
+    margin: 0.3em 0.8em 1em 0em;
+    border: 2px solid #555;
+}
+
 #logo {
     font-family: 'Pacifico', cursive;
 }
@@ -180,10 +188,6 @@ a.pure-button-primary {
     font-weight: normal;
 }
 
-#landing-page .feature .actions {
-    /*text-align: center;*/
-}
-
 #landing-page .seemore {
     text-align: center;
 }
@@ -224,6 +228,10 @@ a.pure-button-primary {
 #projects-page .project > header > h2 {
     /*display: inline;*/
     margin-bottom: 0em;
+}
+
+#projects-page footer.actions {
+    clear: left;
 }
 
 #projects-page .project > header > .language,
@@ -317,5 +325,11 @@ a.pure-button-primary {
     #logo-container, #top-nav {
         display: block;
         text-align: center;
+    }
+
+    img.project-shot {
+        display: block;
+        margin: 0em auto;
+        float: none;
     }
 }
