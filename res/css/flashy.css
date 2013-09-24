@@ -6,14 +6,6 @@ body {
     padding-bottom: 4em;
 }
 
-img.project-shot {
-    display: block;
-    max-width: 100%;
-    float: left;
-    margin: 0.3em 0.8em 1em 0em;
-    border: 2px solid #555;
-}
-
 #logo {
     font-family: 'Pacifico', cursive;
 }
@@ -32,6 +24,10 @@ hr {
     border-bottom: 1px dashed #CCC;
 }
 
+a.pure-button {
+    margin-bottom: 0.2em;
+}
+
 a.pure-button-primary {
     background-color: #5CADB5;
     font-weight: 600;
@@ -42,6 +38,8 @@ a.pure-button-primary {
 }
 
 #landing-page .feature {
+    clear: right;
+
     padding: 1em;
     margin-bottom: 1em;
 
@@ -51,6 +49,14 @@ a.pure-button-primary {
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
+}
+
+#landing-page .leftcolumn .feature {
+    margin-right: 0.5em;
+}
+
+#landing-page .rightcolumn .feature {
+    margin-left: 0.5em;
 }
 
 #landing-page .feature h3 {
@@ -80,7 +86,7 @@ a.pure-button-primary {
 #selfie {
     width: 10em;
     height: 10em;
-    background: url(/res/img/self.png) no-repeat center center;
+    background: url(/res/img/self.jpg) no-repeat center center;
     background-size: cover;
 
     border-radius: 5em;
@@ -227,11 +233,27 @@ a.pure-button-primary {
 
 #projects-page .project > header > h2 {
     /*display: inline;*/
+    margin-top: 1em;
     margin-bottom: 0em;
 }
 
 #projects-page footer.actions {
     clear: left;
+}
+
+#projects-page img.project-shot {
+    display: block;
+    max-width: 100%;
+    float: left;
+    margin: 0.3em 0.8em 1em 0em;
+    border: 2px solid #555;
+}
+
+#landing-page img.project-shot {
+    display: block;
+    max-width: 100%;
+    margin: 0.3em 0em 1em 0em;
+    border: 2px solid #555;
 }
 
 #projects-page .project > header > .language,
@@ -327,7 +349,7 @@ a.pure-button-primary {
         text-align: center;
     }
 
-    img.project-shot {
+    #projects-page img.project-shot {
         display: block;
         margin: 0em auto;
         float: none;
