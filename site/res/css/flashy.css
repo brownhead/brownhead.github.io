@@ -19,6 +19,19 @@ a:hover {
     text-decoration: underline;
 }
 
+h2 > a {
+    color: #161616;
+}
+
+h2 > a:hover {
+    color: #161616;
+    text-decoration: none;
+}
+
+h2 > a:active, h2 > a:focus {
+    outline: 0;
+}
+
 hr {
     border: none;
     border-bottom: 1px dashed #CCC;
@@ -266,16 +279,6 @@ a.pure-button-primary {
 
 #projects-page .project {
     margin-bottom: 2em;
-}
-
-#projects-page .project > header > h2 > a {
-    color: #161616;
-    outline: none;
-}
-
-#projects-page .project > header > h2 > a:hover {
-    color: #161616;
-    text-decoration: none;
 }
 
 #projects-page .project > header > time:before {
