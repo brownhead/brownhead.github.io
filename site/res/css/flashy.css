@@ -236,11 +236,14 @@ a.pure-button-primary {
     clear: left;
 }
 
-#projects-page img.project-shot {
-    display: block;
-    max-width: 100%;
+#projects-page aside.project-shot {
     float: left;
     margin: 0.3em 0.8em 1em 0em;
+}
+
+#projects-page aside.project-shot > img {
+    display: block;
+    max-width: 100%;
     border: 2px solid #555;
 }
 
@@ -344,7 +347,7 @@ a.pure-button-primary {
         text-align: center;
     }
 
-    #projects-page img.project-shot {
+    #projects-page aside.project-shot {
         display: block;
         margin: 0em auto;
         float: none;
