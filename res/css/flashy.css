@@ -84,11 +84,6 @@ a.pure-button-primary {
 }
 
 #selfie {
-    width: 10em;
-    height: 10em;
-    background: url(/res/img/self.jpg) no-repeat center center;
-    background-size: cover;
-
     border-radius: 5em;
     -webkit-border-radius: 5em;
     -moz-border-radius: 5em;
@@ -96,7 +91,7 @@ a.pure-button-primary {
 
 #intro {
     display: block;
-    margin-left: 1em;
+    margin: 0em 0em 0em 1em;
     padding: 1em;
     background-color: rgb(250, 250, 250);
     border: 1px solid #EEE;
@@ -168,7 +163,7 @@ a.pure-button-primary {
     padding-top: 1em;
     font-size: 0.8em;
     text-align: right;
-    color: #AAA;
+    color: #888;
 }
 
 #page-footer a {
@@ -241,11 +236,14 @@ a.pure-button-primary {
     clear: left;
 }
 
-#projects-page img.project-shot {
-    display: block;
-    max-width: 100%;
+#projects-page aside.project-shot {
     float: left;
     margin: 0.3em 0.8em 1em 0em;
+}
+
+#projects-page aside.project-shot > img {
+    display: block;
+    max-width: 100%;
     border: 2px solid #555;
 }
 
@@ -349,7 +347,7 @@ a.pure-button-primary {
         text-align: center;
     }
 
-    #projects-page img.project-shot {
+    #projects-page aside.project-shot {
         display: block;
         margin: 0em auto;
         float: none;
