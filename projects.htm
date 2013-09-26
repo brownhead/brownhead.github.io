@@ -79,7 +79,7 @@
             <p class="project-headline">
                 A simple tool for turning a multi-file, multi-dependency Python script into a single executable file.
             </p>
-            <aside class="project-shot" data-video="//www.youtube.com/embed/B10BFc5PDK0?rel=0" data-width="420" data-height="315" style="display: none"></aside>
+            <aside class="project-shot" data-video="http://www.youtube.com/embed/B10BFc5PDK0?rel=0" data-width="420" data-height="315" style="display: none"></aside>
             <p>
                 I often make little Python utilities that I'd like to share. Unfortunately, installing a Python program that's more than a few files can be intimidating to non-Python developers. Superzippy solves this problem by providing an easy way to transform my complicated scripts into easily downloadable, runnable files.
             </p>
@@ -274,9 +274,9 @@
                     var anchors = asides[i].getElementsByTagName("a");
                     if (anchors.length === 0) {
                         asides[i].appendChild(video_iframe);
+                        asides[i].style.display = "block";
                     } else if (anchors.length === 1) {
                         asides[i].replaceChild(video_iframe, anchors[0]);
-                        asides[i].style.display = "block";
                     } else {
                         throw Error("DOM not in expected state.")
                     }
