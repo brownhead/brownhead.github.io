@@ -27,10 +27,10 @@ set -e
 
 cd $DIR/..
 
-# Ensure we're on master.
+# Ensure we're on master-source.
 CURRENT_BRANCH=`what_branch`
 if [[ "$CURRENT_BRANCH" != "master-source" ]]; then
-    echo "Must be on master"
+    echo "Must be on master-source"
 	exit 1
 fi
 
