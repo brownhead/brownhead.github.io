@@ -6,9 +6,18 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
     <meta name="description" content="A listing of projects created by John Sullivan." />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600|Pacifico" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Pacifico&text=John%20Sullivan" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
     <link href="/res/css/flashy.css" rel="stylesheet" type="text/css">
+    <style media="screen">
+        .video { display: block; }
+        .hidden-image { display: none; }
+    </style>
+    <style media="print">
+        .video { display: none; }
+        .hidden-image { display: block; }
+    </style>
 </head>
 <body id="projects-page">
     <header id="top-header">
@@ -257,7 +266,8 @@
                         "width": asides[i].getAttribute("data-width"),
                         "height": asides[i].getAttribute("data-height"),
                         "frameborder": "0",
-                        "allowfullscreen": "true"
+                        "allowfullscreen": "true",
+                        "class": "video"
                     };
                     for (var k in attributes) {
                         video_iframe.setAttribute(k, attributes[k]);
@@ -268,7 +278,8 @@
                         asides[i].appendChild(video_iframe);
                         asides[i].style.display = "block";
                     } else if (anchors.length === 1) {
-                        asides[i].replaceChild(video_iframe, anchors[0]);
+                        asides[i].appendChild(video_iframe);
+                        anchors[0].className += " hidden-image";
                     } else {
                         throw Error("DOM not in expected state.")
                     }
