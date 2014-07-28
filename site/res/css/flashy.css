@@ -8,6 +8,7 @@ body {
 
 #logo {
     font-family: "Pacifico", cursive;
+    /*font-weight: bold;*/
 }
 
 a {
@@ -59,9 +60,7 @@ a.pure-button-primary {
     background-color: rgb(250, 250, 250);
     border: 1px solid #EEE;
 
-    border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
+    box-shadow: 1px 1px 1px #DDD;
 }
 
 #landing-page .leftcolumn .feature {
@@ -100,6 +99,9 @@ a.pure-button-primary {
     border-radius: 5em;
     -webkit-border-radius: 5em;
     -moz-border-radius: 5em;
+
+    border: 1px solid #EEE;
+    box-shadow: 1px 1px 1px #DDD;
 }
 
 #intro {
@@ -108,19 +110,19 @@ a.pure-button-primary {
     padding: 1em;
     background-color: rgb(250, 250, 250);
     border: 1px solid #EEE;
-
-    border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
+    box-shadow: 1px 1px 1px #DDD;
 }
 
 #top-header {
     background-color: #5CACB5;
+    box-shadow: 1px 1px 1px #DDD;
+    width: 80%;
+    margin: 0px auto;
 }
 
 #nav-table {
     display: table;
-    width: 80%;
+    width: 93%;
     margin: 0em auto;
 }
 
