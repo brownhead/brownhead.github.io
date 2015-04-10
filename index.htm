@@ -15,14 +15,14 @@
     <header id="top-header">
         <div id="nav-table">
             <div id="logo-container">
-                <a id="logo" href="/index.htm">John Sullivan</a>
+                <span id="logo">John Sullivan</span>
             </div>
             <nav id="top-nav">
                 <ul>
-                    <li><a href="/projects.htm">Projects</a></li>
-                    <li><a href="/about.htm">About Me</a></li>
+                    <li><a href="https://github.com/brownhead">Github</a></li>
                     <li><a href="http://johncs.com">Blog</a></li>
-                    <li><a href="mailto:jsull003@ucr.edu">Contact</a></li>
+                    <li><a href="/res/dl/resume.htm">Resume</a></li>
+                    <li><a href="mailto:johnsullivan.pem@gmail.com">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,14 +33,12 @@
                 <img id="selfie" src="/res/img/self.jpg" alt="self" width="200" height="200" />
             </div>
             <div id="intro-container">
-                <p id="intro">
-                    <b>Welcome to my portfolio.</b> I am a Software Engineer in California and I love building all kinds of software.
-                </p>
+                <div id="intro">
+                    <b>Welcome to my portfolio.</b> I am a Software Engineer in California and I love building all kinds of software. Right now I build things at <a href="https://www.khanacademy.org/">Khan Academy</a> (and am not currently looking for work).
+                </div>
             </div>
         </header>
-        <hr />
         <div id="projects">
-            <h2>Projects</h2>
             <div class="pure-g-r">
                 <div class="pure-u-1-2 leftcolumn">
                     <article class="feature">
@@ -48,23 +46,32 @@
                         <p>
                             An automated grading system geared towards processing computer programming assignments.
                         </p>
-                        <a href="/projects.htm#galah">
+                        <a href="https://github.com/galah-group/galah">
                             <img class="project-shot" src="/res/img/projectshots/galah.png" alt="Galah Screenshot" />
                         </a>
                         <footer class="actions">
-                            <a href="/projects.htm#galah" class="pure-button pure-button-primary">Read More</a>
+                            <a href="https://github.com/galah-group/galah" class="pure-button">GitHub</a>
                         </footer>
                     </article>
                     <article class="feature">
-                        <h3>Anti-Gravity Connect 4</h3>
+                        <h3>Min-Max Heap</h3>
                         <p>
-                            A flash game that puts a big twist on the classic game of Connect 4.
+                            A C++ implementation of a very interesting data structure that allows efficient removal of the largest and the smallest item from the same heap.
                         </p>
-                        <a href="/projects.htm#agc4">
-                            <img class="project-shot" src="/res/img/projectshots/agc4.png" alt="AGC4 Screenshot" />
+                        <footer class="actions">
+                            <a href="https://github.com/brownhead/minmaxheap-cpp" class="pure-button">GitHub</a>
+                        </footer>
+                    </article>
+                    <article class="feature">
+                        <h3>Cloak</h3>
+                        <p>
+                            A Visual Basic 6 application I made in middle school that lets you hide any window on your Windows PC immediately, and temporarily, at the press of a hotkey.
+                        </p>
+                        <a href="https://github.com/brownhead/cloak">
+                            <img class="project-shot" src="/res/img/projectshots/cloak.png" alt="Cloak Screenshot" />
                         </a>
                         <footer class="actions">
-                            <a href="/projects.htm#agc4" class="pure-button pure-button-primary">Read More</a>
+                            <a href="https://github.com/brownhead/cloak" class="pure-button">GitHub</a>
                         </footer>
                     </article>
                 </div>
@@ -75,11 +82,11 @@
                             A simple tool for turning a multi-file, multi-dependency Python script into a single executable file.
                         </p>
                         <footer class="actions">
-                            <a href="/projects.htm#superzippy" class="pure-button pure-button-primary">Read More</a>
+                            <a href="https://github.com/brownhead/superzippy" class="pure-button">GitHub</a>
                         </footer>
                     </article>
                     <article class="feature">
-                        <a href="/projects.htm#particles">
+                        <a href="https://github.com/brownhead/particles">
                             <img class="project-shot" style="float: right; margin-left: 0.3em" src="/res/img/projectshots/particles.gif" alt="Particles Screenshot" />
                         </a>
                         <h3>Particles</h3>
@@ -87,7 +94,7 @@
                             A C program using <a href="http://www.libsdl.org/">SDL</a> that attempts to emulate the effect of the <a href="http://www.chromeexperiments.com/detail/liquid-particles/">Liquid Particles Chrome Experiment</a>.
                         </p>
                         <footer class="actions">
-                            <a href="/projects.htm#particles" class="pure-button pure-button-primary">Read More</a>
+                            <a href="https://github.com/brownhead/particles" class="pure-button">GitHub</a>
                         </footer>
                     </article>
                     <article class="feature">
@@ -95,38 +102,36 @@
                         <p>
                             A small experiment with the <a href="http://processingjs.org/">Processing.js</a> library based on <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a>.
                         </p>
-                        <a href="/projects.htm#life">
+                        <a href="https://github.com/brownhead/processing-life">
                             <img class="project-shot" src="/res/img/projectshots/processing.png" alt="Processing Life Screenshot" />
                         </a>
                         <footer class="actions">
-                            <a href="/projects.htm#life" class="pure-button pure-button-primary">Read More</a>
+                            <a href="http://johncs.us" class="pure-button pure-button-primary">Live Demo</a>
+                            <a href="https://github.com/brownhead/processing-life" class="pure-button">GitHub</a>
+                        </footer>
+                    </article>
+                    <article class="feature">
+                        <h3>Anti-Gravity Connect 4</h3>
+                        <p>
+                            A flash game that puts a big twist on the classic game of Connect 4.
+                        </p>
+                        <a href="https://github.com/brownhead/agc4">
+                            <img class="project-shot" src="/res/img/projectshots/agc4.png" alt="AGC4 Screenshot" />
+                        </a>
+                        <footer class="actions">
+                            <a href="/res/swf/agc4.swf" class="pure-button pure-button-primary">Live Demo</a>
+                            <a href="https://github.com/brownhead/agc4" class="pure-button">GitHub</a>
                         </footer>
                     </article>
                 </div>
             </div>
-            <footer class="seemore">
-                <a href="/projects.htm">More projects...</a>
-            </footer>
         </div>
-        <hr />
-        <section>
-            <h2>About Me</h2>
-            <p>
-                I love working with <b>Python</b>, <b>C</b>, <b>C++</b>, <b>C#</b>, and <b>JavaScript</b>. Recently, I've been working in the fields of <b>distributed systems</b>, <b>networking</b>, <b>backend web development</b>, and <b>software deployment</b>.
-            </p>
-            <footer class="actions">
-                <a href="/about.htm" class="pure-button pure-button-primary">Read More</a>
-                <a href="https://github.com/brownhead" class="pure-button">GitHub</a>
-                <a href="/res/dl/resume.pdf" class="pure-button">Resume</a>
-            </footer>
-        </section>
-        <hr />
         <footer id="page-footer">
             <section>
-                Copyright 2013 John Sullivan. <a href="http://creativecommons.org/licenses/by-sa/3.0/">Some rights reserved</a>.
+                Copyright 2013-2015 John Sullivan. <a href="http://creativecommons.org/licenses/by-sa/3.0/">Some rights reserved</a>.
             </section>
             <section>
-                Hosted on <a href="http://pages.github.com/">GitHub pages</a>.
+                Website hosted on <a href="https://github.com/brownhead/brownhead.github.io">GitHub</a>.
             </section>
         </footer>
     </div>
