@@ -12,10 +12,8 @@ body {
 }
 
 #logo {
-    /*font-family: "Pacifico", cursive;*/
-    font-weight: bold;
-    /*font-size: 24px;*/
-    font-variant: small-caps;
+    font-family: "Pacifico", cursive;
+    color: #fff;
 }
 
 a {
@@ -139,11 +137,6 @@ a.pure-button-primary {
 
 #logo-container {
     display: table-cell;
-}
-
-#logo-container a {
-    color: #FFF;
-    text-decoration: none;
 }
 
 #top-nav {
