@@ -35,7 +35,7 @@ if [[ "$CURRENT_BRANCH" != "master-source" ]]; then
 fi
 
 # Move the site to a temporary directory
-TEMP_DIR=`mktemp -d /tmp/portfolio.XXXX`
+TEMP_DIR=`mktemp -d`
 mv ./site/* "$TEMP_DIR"/
 
 # Tranfer the site into the master branch.
