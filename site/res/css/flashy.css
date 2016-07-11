@@ -2,20 +2,13 @@ body {
     font-family: "Open Sans", sans-serif;
     background-color: #FEFEFE;
     color: #161616;
-    font-size: 18px;
-    padding-bottom: 80px;
-}
-
-#logo-container {
-    width: 200px;
-    text-align: center;
+    font-size: 125%;
+    padding-bottom: 4em;
 }
 
 #logo {
-    /*font-family: "Pacifico", cursive;*/
-    font-weight: bold;
-    /*font-size: 24px;*/
-    font-variant: small-caps;
+    font-family: "Pacifico", cursive;
+    /*font-weight: bold;*/
 }
 
 a {
@@ -46,7 +39,7 @@ hr {
 }
 
 a.pure-button {
-    margin-bottom: 4px;
+    margin-bottom: 0.2em;
 }
 
 a.pure-button-primary {
@@ -55,14 +48,14 @@ a.pure-button-primary {
 }
 
 #landing-page #projects {
-    margin-bottom: 40px;
+    margin-bottom: 2em;
 }
 
 #landing-page .feature {
     clear: right;
 
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 1em;
+    margin-bottom: 1em;
 
     background-color: rgb(250, 250, 250);
     border: 1px solid #EEE;
@@ -71,21 +64,21 @@ a.pure-button-primary {
 }
 
 #landing-page .leftcolumn .feature {
-    margin-right: 10px;
+    margin-right: 0.5em;
 }
 
 #landing-page .rightcolumn .feature {
-    margin-left: 10px;
+    margin-left: 0.5em;
 }
 
 #landing-page .feature h3 {
-    margin-top: 0;
+    margin-top: 0em;
 }
 
 #landing-page .feature > blockquote {
     position: relative;
-    margin-left: 0;
-    padding-left: 0;
+    margin-left: 0em;
+    padding-left: 0em;
 }
 
 #landing-page h2 {
@@ -94,7 +87,7 @@ a.pure-button-primary {
 
 #badge {
     display: table;
-    margin: 40px 0;
+    margin: 2em 0em;
 }
 
 #badge > div {
@@ -103,25 +96,21 @@ a.pure-button-primary {
 }
 
 #selfie {
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
+    border-radius: 5em;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
 
-    /*border: 1px solid #EEE;*/
+    border: 1px solid #EEE;
     box-shadow: 1px 1px 1px #DDD;
 }
 
 #intro {
     display: block;
-    margin: 0 0 0 20px;
-    padding: 20px;
+    margin: 0em 0em 0em 1em;
+    padding: 1em;
     background-color: rgb(250, 250, 250);
     border: 1px solid #EEE;
     box-shadow: 1px 1px 1px #DDD;
-}
-
-#intro p {
-    margin-top: 0;
 }
 
 #top-header {
@@ -133,12 +122,13 @@ a.pure-button-primary {
 
 #nav-table {
     display: table;
-    width: 100%;
-    margin: 0 auto;
+    width: 93%;
+    margin: 0em auto;
 }
 
 #logo-container {
     display: table-cell;
+    text-align: left;
 }
 
 #logo-container a {
@@ -149,13 +139,12 @@ a.pure-button-primary {
 #top-nav {
     display: table-cell;
     text-align: right;
-    padding-right: 15px;
 }
 
 #top-nav ul {
     display: block;
-    margin: 0;
-    padding: 0;
+    margin: 0em;
+    padding: 0em;
 }
 
 #top-nav li{
@@ -168,7 +157,7 @@ a.pure-button-primary {
     display: inline-block;
     text-decoration: none;
     color: #FFF;
-    padding: 10px;
+    padding: 0.5em;
 }
 
 #top-nav li.selected > a{
@@ -182,13 +171,13 @@ a.pure-button-primary {
 
 #content {
     width: 80%;
-    margin: 0 auto;
+    margin: 0em auto;
 }
 
 #page-footer {
-    padding-top: 20px;
-    font-size: 16px;
-    text-align: center;
+    padding-top: 1em;
+    font-size: 0.8em;
+    text-align: right;
     color: #888;
 }
 
@@ -202,36 +191,25 @@ a.pure-button-primary {
 }
 
 #landing-page #work-status {
-    padding: 20px;
+    padding: 1em;
 }
 
 #landing-page .feature > header > h3 {
-    margin-bottom: 4px;
+    margin-bottom: 0.2em;
 }
 
 #landing-page .feature > header > .subtitle {
-    font-size: 16px;
+    font-size: 0.8em;
     color: #888;
     font-weight: normal;
 }
 
 #landing-page .seemore {
     text-align: center;
-    /*margin: 0 auto;
-    width: 120px;
-    line-height: 120px;
-    background-color: #E6E6E6;
-    border-radius: 60px;
-    height: 120px;
-    text-align: center;*/
-}
-
-#landing-page .seemore a {
-    box-shadow: 1px 1px 1px #DDD;
 }
 
 #landing-page .feature + .seemore {
-    margin-top: 35px;
+    margin-top: 1.75em;
 }
 
 /*#landing-page .seemore {
@@ -241,32 +219,32 @@ a.pure-button-primary {
 /*#landing-page .seemore > a {
     display: block;
     color: #3b8bba;
-    padding: 20px 0;
+    padding: 1em 0em;
     opacity: 0.8;
 }*/
 
 #landing-page #lcolumn {
-    padding-right: 20px;
+    padding-right: 1em;
 }
 
 #landing-page #rcolumn {
-    padding-left: 20px;
+    padding-left: 1em;
 }
 
 #landing-page #projects header > h3 {
-    margin-bottom: 4px;
+    margin-bottom: 0.2em;
 }
 
 #landing-page #projects header > .subtitle {
-    font-size: 16px;
+    font-size: 0.8em;
     color: #888;
     font-weight: normal;
 }
 
 #projects-page .project > header > h2 {
     /*display: inline;*/
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-top: 1em;
+    margin-bottom: 0em;
 }
 
 #projects-page footer.actions {
@@ -275,7 +253,7 @@ a.pure-button-primary {
 
 #projects-page aside.project-shot {
     float: left;
-    margin: 6px 16px 20px 0;
+    margin: 0.3em 0.8em 1em 0em;
 }
 
 #projects-page aside.project-shot > img {
@@ -287,7 +265,7 @@ a.pure-button-primary {
 #landing-page img.project-shot {
     display: block;
     max-width: 100%;
-    margin: 6px 0 20px 0;
+    margin: 0.3em 0em 1em 0em;
     border: 2px solid #555;
 }
 
@@ -302,26 +280,26 @@ a.pure-button-primary {
 }
 
 #projects-page .project {
-    margin-bottom: 40px;
+    margin-bottom: 2em;
 }
 
 #projects-page .project > header > time:before {
     content: "\2022";
-    margin: 0 10px;
+    margin: 0em 0.5em;
     font-style: normal;
 }
 
 #about-page #tech-table {
-    margin-bottom: 40px;
+    margin-bottom: 2em;
 }
 
 #about-page #tech-table td, #about-page #tech-table th {
-    padding: 4px;
+    padding: 0.2em;
 }
 
 #about-page #tech-table th {
     text-align: left;
-    padding-right: 40px;
+    padding-right: 2em;
 }
 
 #about-page #tech-table tr:nth-child(even) {
@@ -343,11 +321,11 @@ a.pure-button-primary {
 
     #selfie {
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 1em;
     }
 
     #intro {
-        margin-left: 0;
+        margin-left: 0em;
     }
 
     #content {
@@ -355,13 +333,13 @@ a.pure-button-primary {
     }
 
     #landing-page #lcolumn, #landing-page #rcolumn {
-        padding: 0;
+        padding: 0em;
     }
 
     #intro, .feature, #selfie {
-        border-radius: 0;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
+        border-radius: 0em;
+        -webkit-border-radius: 0em;
+        -moz-border-radius: 0em;
     }
 
     #nav-table {
@@ -376,15 +354,15 @@ a.pure-button-primary {
 
     #projects-page aside.project-shot {
         display: block;
-        margin: 0 auto;
+        margin: 0em auto;
         float: none;
     }
 
     #landing-page .leftcolumn .feature {
-        margin-right: 0;
+        margin-right: 0em;
     }
 
     #landing-page .rightcolumn .feature {
-        margin-left: 0;
+        margin-left: 0em;
     }
 }
