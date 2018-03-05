@@ -2,9 +2,13 @@
 2012 - End of College-Sophemore, beginning of College-Junior
 2011 - End of College-Freshman, beginning of College-Sophemore
 2010 - End of Highschool-Senior, beginning of College-Freshman
-2009 - End of Highschool-Junior, Beginning of Highschool-Senior
-2008 - End of Highschool-Sophemore, Beginning of Highschool-Junior
-2007 - End of Highschool-Freshman, Beginning of Highschool-Sophemore
-2006 - End of 8th grade, beginning of Highshool-Freshman
-2005 - End of 7th grade, beginning of 8th Grade
-2004 - End of 6th grade, beginning of 7th grade.
+2009 - End of Highschool-Junior, Beginning of Highschool-Senior (ending age 16, then starting 17)
+2008 - End of Highschool-Sophemore, Beginning of Highschool-Junior (ending age 15, then starting 16)
+2007 - End of Highschool-Freshman, Beginning of Highschool-Sophemore (ending age 14, then starting 15)
+2006 - End of 8th grade, beginning of Highshool-Freshman (ending age 13, then starting 14)
+2005 - End of 7th grade, beginning of 8th Grade (ending age 12, then starting 13)
+2004 - End of 6th grade, beginning of 7th grade. (ending age 11, then starting 12)
+2003 - End of 5th grade, beginning of 6th grade. (ending age 10, then starting 11)
+2002 - End of 4th grade, beginning of 5th grade. (ending age 9, then starting 10)
+2001 - End of 3rd grade, beginning of 4th grade. (ending age 8, then starting 9)
+2000 - End of 2nd grade, beginning of 3rd grade. (ending age 7, then starting 8) [Started programming here or 2001]
